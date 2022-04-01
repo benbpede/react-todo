@@ -13,7 +13,7 @@ const TodoInsert = ({ onInsert }) => {
     (e) => {
       onInsert(value);
       setValue(''); // value값 초기화
-      //submit 이벤트는 새로고침을 발생시키므로 이를 방지하기위해 밑 함수 사용
+
       e.preventDefault();
     },
     [onInsert, value],
